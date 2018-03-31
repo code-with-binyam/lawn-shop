@@ -1,0 +1,30 @@
+
+import java.util.Scanner;
+public class ArrayExample2 {
+  public static void main(String [] args) {
+    Scanner input = new Scanner(System.in); 
+   System.out.print ("enter the size of the array:");
+int size = input.nextInt();
+   int score [] = new int [size];
+   
+   for (int index = 0; index < score.length; index ++){
+  System.out.print ("Enter an integer:");
+  int element = input.nextInt();
+  score[index] = element;
+   }
+   for (int index = 0; index < score.length; index++) {
+     System.out.printf("\n %d", score[index]); 
+   }
+  int total = 0;
+   for (int index = 0; index < score.length; index++) {
+     total += score[index];
+ 
+     System.out.print ("\n" 2+ total);
+   }
+  }
+}
+
+
+
+
+
